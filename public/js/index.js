@@ -9,9 +9,6 @@ var socket=io();
 	socket.on('disconnect',function(){
 			console.log('Disconnected from server')
 	})
-socket.on('newUser',function(msg){
-	console.log(msg);
-})
 socket.on('newMessage',function(msg){
 	console.log('Got new Message',msg)
 })
